@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadi rang a Lakruwan - Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    /* Home Section */
+    .home {
+      text-align: center;
+    }
+
+    .home h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .home p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* About Section */
+    .about ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .about ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Portfolio Section */
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      color: #555;
+    }
+
+    /* Resume Section */
+    .resume a {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .resume a:hover {
+      background-color: #555;
+    }
+
+    /* Contact Section */
+    .contact p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1>Hi, I'm Nadi rang a Lakruwan</h1>
+    <p>Software Engineer | IT Professional</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Results-driven Software Engineer with a strong background in software development, data science, and IT solutions. Holds a Bachelor’s degree in Computing and is currently pursuing a Master’s in Data Science at Dalarna University, Sweden.
+    </p>
+    <h3>Education</h3>
+    <ul>
+      <li>Master of Data Science (Ongoing) - Dalarna University, Sweden</li>
+      <li>Bachelor of Science (Hons) Computing - Coventry University, UK</li>
+      <li>Higher National Diploma in Software Engineering - NIBM, Sri Lanka</li>
+    </ul>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Programming Languages: Java, C#, C++, Python, JavaScript</li>
+      <li>Web Development: React, HTML, CSS, Node.js</li>
+      <li>Database Management: MySQL, MongoDB, SQLite</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>E-Commerce Application</h3>
+      <p>Developed an E-Commerce Application for a restaurant in Dubai, integrating secure payment systems and a user-friendly interface.</p>
+    </div>
+    <div class="project">
+      <h3>Smart IoT System for Agriculture</h3>
+      <p>Designed a Smart IoT System for agriculture, enabling automated monitoring and control of environmental conditions.</p>
+    </div>
+    <div class="project">
+      <h3>Mobile Application for RNK Construction</h3>
+      <p>Created a Mobile Application for RNK Construction Pvt Ltd, streamlining project management and internal communications.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="/path/to/your/CV.pdf" download="Nadi_rang_a_Lakruwan_CV.pdf">Download My CV</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: nadirangalakruwan22@gmail.com</p>
+    <p>Phone: +46 076-748 46 51</p>
+    <p>Address: Kornstigen ISC LGH 1116 Borlänge 78452, Dalarna, Sweden</p>
+  </section>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
